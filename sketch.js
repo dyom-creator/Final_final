@@ -13,6 +13,8 @@ let buttonPause2;
 
 let buttonJump;
 let buttonJump2;
+let buttonJump3;
+let buttonJump4;
 
 let vol;
 let vol2;
@@ -40,7 +42,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 640);
+  createCanvas(640, 1280);
   // mm2.play();
 
   amp = new p5.Amplitude();
@@ -67,13 +69,13 @@ function setup() {
   
   buttonJump = createButton("<<1");
   buttonJump.mousePressed(jumpSong2);
-  buttonJump = createButton("1>>");
-  buttonJump.mousePressed(jumpSong);
+  buttonJump2 = createButton("1>>");
+  buttonJump2.mousePressed(jumpSong);
   
-  buttonJump2 = createButton("<<2");
-  buttonJump2.mousePressed(jumpSong2_2);
-  buttonJump2 = createButton("2>>");
-  buttonJump2.mousePressed(jumpSong_2);
+  buttonJump3 = createButton("<<2");
+  buttonJump3.mousePressed(jumpSong2_2);
+  buttonJump4 = createButton("2>>");
+  buttonJump4.mousePressed(jumpSong_2);
 
   slider = createSlider(0, 2, 0.5, 0.1);
   slider2 = createSlider(0, 2, 0.5, 0.1);
@@ -88,6 +90,22 @@ function setup() {
 
   jumpV = 0;
   jumpV2 = 0;
+  
+  button.position(80, 800);
+  button2.position(400, 800);
+  buttonPause.position(160, 800);
+  buttonPause2.position(480, 800);
+  buttonJump.position(80, 864);
+  buttonJump2.position(160, 864);
+  buttonJump3.position(400, 864);
+  buttonJump4.position(480, 864);
+  slider.position(80, 928);
+  slider2.position(400, 928);
+  sliderPan.position(80, 992);
+  sliderPan2.position(400, 992);
+  sliderRate.position(80, 1056);
+  sliderRate2.position(400, 1056);
+  
 }
 
 function draw() {
@@ -150,9 +168,10 @@ function draw() {
   triangle(480, 640, 544, 640, 512, 0 + amplitude);
   triangle(544, 640, 608, 640, 576, 0 + amplitude);
   
-   // 눈 이미지 그리기
-  imageMode(CENTER); // 이미지 중심으로 배치
-  image(snowImage, width / 2, height / 2, snowSize, snowSize);
+// 눈 이미지 그리기
+imageMode(CENTER); // 이미지 중심으로 배치
+image(snowImage, 320, 320, snowSize, snowSize); // (x, y, 너비, 높이)
+
 }
 
 // play 
