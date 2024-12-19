@@ -232,9 +232,9 @@ function jumpSong_2() {
   mm2.jump(jumpV2);
 }
 function jumpSong2_2() {
-  jumpV = jumpV - 24.71;
-  if (jumpV <= 24.71) {
-    jumpV = 0;
+  jumpV2 = jumpV2 - 24.71;
+  if (jumpV2 <= 24.71) {
+    jumpV2 = 0;
   }
-  mm2.jump(jumpV);
+  mm2.jump(jumpV2);
 }
