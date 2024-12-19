@@ -29,6 +29,7 @@ let sliderRate2;
 let amp;
 
 let jumpV;
+let jumpV2;
 
 function preload() {
   soundFormats("mp3", "ogg");
