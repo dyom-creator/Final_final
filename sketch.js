@@ -225,7 +225,7 @@ function jumpSong2() {
 
 
 function jumpSong_2() {
-  jumpV = jumpV + 24.71;
+  jumpV2 = jumpV2 + 24.71;
   if (jumpV + 24.71 >= 148) {
     jumpV = 148;
   }
