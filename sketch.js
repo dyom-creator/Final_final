@@ -226,10 +226,10 @@ function jumpSong2() {
 
 function jumpSong_2() {
   jumpV2 = jumpV2 + 24.71;
-  if (jumpV + 24.71 >= 148) {
-    jumpV = 148;
+  if (jumpV2 + 24.71 >= 148) {
+    jumpV2 = 148;
   }
-  mm2.jump(jumpV);
+  mm2.jump(jumpV2);
 }
 function jumpSong2_2() {
   jumpV = jumpV - 24.71;
