@@ -87,7 +87,7 @@ function setup() {
   sliderRate2 = createSlider(0, 2, 1, 0.1);
 
   jumpV = 0;
-  jumpV2 =0;
+  jumpV2 = 0;
 }
 
 function draw() {
